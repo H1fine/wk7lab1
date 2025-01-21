@@ -3,22 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Data Table</title>
 </head>
 <body>
-    <table id = "Weather Table">
+
+<h1>Data Table</h1>
+    <table id="weatherTable" border="1">
         <!-- group header content in a table -->
         <thead>
             <!-- Define rows for cells -->
-<tr>
-    <!-- Defines a header cell for table-->
-    <th>Day</th>
-    <th>Temperature (&deg;F)</th>
-    <th>Rainfall (inches)</th>
-</tr>
+            <tr>
+                <!-- Defines a header cell for table-->
+                <th>Day</th>
+                <th>Temperature °F</th>
+                <th>Rainfall (inches)</th>
+            </tr>
         </thead>
-<tbody></tbody>
+        <tbody>
+            <tr>
+                <td>Sunday</td>
+                <td>60</td>
+                <td>0.2</td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>55</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>63</td>
+                <td>0.3</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>57</td>
+                <td>0.25</td>
+            </tr>
+        </tbody>
     </table>
+
+    <button id="avgTempButton">Avg Temp</button>
+    <p id="avgTempResult"></p>
+
+    <button id="maxRainButton">Max Rain</button>
+    <p id="maxRainResult"></p>
     <script src="script.js"></script>
 </body>
 </html>
